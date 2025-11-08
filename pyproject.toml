@@ -7,6 +7,9 @@ requires-python = ">=3.13"
 dependencies = [
     "pytest>=8.4.2",
 ]
+description = "小天才手表Root工具SDK - 仅供技术研究使用"
+keywords = ["xtc", "root", "sdk", "research"]
+license = {text = "MIT"}
 
 [index]
 url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
