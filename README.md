@@ -52,8 +52,7 @@ XTCRootTools/
 │   │   
 │   ├── 📁 device/                       # 设备相关模块  
 │   │   ├── __init__.py  
-│   │   ├── manager.py                   # 设备管理器  
-│   │   └── detectors.py                 # 设备检测  
+│   │   └── manager.py                   # 设备管理器  
 │   │   
 │   ├── 📁 modules/    
 │   │   ├── __init__.py    
@@ -92,7 +91,7 @@ XTCRootTools/
 ├── 📄 .python-version                   # python环境版本
 ├── 📄 pytest.ini                        # pytest配置文件
 ├── 📄 DISCLAIMER.md                     # 免责声明
-├── 📄 LICENSE                           #  
+├── 📄 LICENSE                           # 开源协议
 └── 📄 .gitignore                        # Git忽略规则  
 ```
 
