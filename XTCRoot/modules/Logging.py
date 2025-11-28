@@ -12,7 +12,9 @@ import typing
 
 def init_logging(log_path: pathlib.Path,
                  module_name: str,
-                 level: typing.Literal[10, 20, 30 ,40, 50] = 10
+                 level: typing.Literal[
+                     logging.DEBUG, logging.INFO, logging.WARNING, logging.ERROR, logging.CRITICAL
+                 ] = logging.DEBUG
                  ) -> logging.Logger:
     """创建日志函数，创建logger实例，并初始化
 
@@ -38,7 +40,7 @@ def init_logging(log_path: pathlib.Path,
 
     # 创建handler
     file_handler = logging.FileHandler(log_path / f"{module_name + time.strftime(" %Y-%m-%d", time.localtime())}.log", encoding="utf-8")
-    file_handler.setLevel(logging.DEBUG)
+    file_handler.setLevel(level)
 
     # 输出到日志的格式
     handler_formatter = logging.Formatter(f"{module_name}: [%(levelname)s] %(asctime)s %(message)s")
