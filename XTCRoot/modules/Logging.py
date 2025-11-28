@@ -10,15 +10,6 @@ import pathlib
 import time
 import typing
 
-def _get_time() -> str:
-    """获取时间函数， 格式为 年:月:日
-
-    Returns:
-        str: 时间
-    """
-
-    return time.strftime("%Y-%m-%d", time.localtime())
-
 def init_logging(log_path: pathlib.Path,
                  module_name: str,
                  level: typing.Literal[10, 20, 30 ,40, 50] = 10
@@ -46,7 +37,7 @@ def init_logging(log_path: pathlib.Path,
     logger.setLevel(level)
 
     # 创建handler
-    file_handler = logging.FileHandler(log_path / f"{module_name + _get_time()}.log", encoding="utf-8")
+    file_handler = logging.FileHandler(log_path / f"{module_name + time.strftime(" %Y-%m-%d", time.localtime())}.log", encoding="utf-8")
     file_handler.setLevel(logging.DEBUG)
 
     # 输出到日志的格式

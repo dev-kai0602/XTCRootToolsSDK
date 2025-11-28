@@ -84,8 +84,6 @@ XTCRootTools/
 │   ├── 📄 SDK.md    
 │   └── 📄 XTCRootToolsSDK开发规范.md   
 │   
-├── 📁 log/                              # 日志文件  
-│   
 ├── 📄 pyproject.toml                    # 项目配置  
 ├── 📄 README.md                         # 项目说明  
 ├── 📄 uv.lock                           # UV环境管理
