@@ -1,13 +1,14 @@
 [project]
 name = "xtcroottoolssdk"
 version = "0.1.0"
-description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "pure-python-adb>=0.3.0.dev0",
+    "pyfastboot>=1.3.13",
     "pytest>=8.4.2",
 ]
-description = "小天才手表Root工具SDK - 仅供技术研究使用"
+description = "XTCRootToolsSDK"
 keywords = ["xtc", "root", "sdk", "research"]
 license = {text = "MIT"}
 

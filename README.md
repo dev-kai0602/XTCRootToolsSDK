@@ -54,10 +54,6 @@ XTCRootTools/
 │   │   ├── __init__.py  
 │   │   └── manager.py                   # 设备管理器  
 │   │   
-│   ├── 📁 modules/    
-│   │   ├── __init__.py    
-│   │   └── Logging.py  # 日志模块
-│   │   
 │   ├── 📁 root/                         # Root流程模块  
 │   │   ├── __init__.py  
 │   │   ├── executor.py                  # Root执行器  
@@ -65,7 +61,8 @@ XTCRootTools/
 │   │       └── __init__.py  
 │   │   
 │   └── 📁 utils/                        # 工具函数  
-│       └── __init__.py  
+│       ├── __init__.py                  
+│       └── Logging.py                   # 日志模块
 │   
 ├── 📁 resources/                        # 资源文件（与代码分离）  
 │   │ 

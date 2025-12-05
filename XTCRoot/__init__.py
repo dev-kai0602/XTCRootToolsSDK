@@ -2,7 +2,10 @@
 
     包含了RootSDK
 
- """
-from XTCRoot import modules
+"""
 
-__all__ = ['modules']
+from . import utils
+from . import exceptions
+
+__all__ = ['utils', 'exceptions']
+__authors__ = ['kai']
