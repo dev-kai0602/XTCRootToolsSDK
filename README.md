@@ -30,7 +30,8 @@
 1) [简介](#简介)
 2) [SDK环境要求](#sdk环境要求)
 3) [文件目录介绍](#文件目录介绍)
-4) [备注](#备注)
+4) [第三方代码引用](#第三方代码引用)
+5) [备注](#备注)
 
 ---
 
@@ -44,25 +45,24 @@
 ## 文件目录介绍
 
 ```text
-XTCRootTools/  
-├── 📁 XTCRoot/                          # 主包目录（核心代码）  
-│   ├── 📄 __init__.py                   # 包初始化文件  
-│   ├── 📄 core.py                       # 核心类（RootManager, DeviceManager等）  
-│   ├── 📄 exceptions.py                 # 自定义异常  
-│   │   
-│   ├── 📁 device/                       # 设备相关模块  
-│   │   ├── __init__.py  
-│   │   └── manager.py                   # 设备管理器  
-│   │   
-│   ├── 📁 root/                         # Root流程模块  
-│   │   ├── __init__.py  
-│   │   ├── executor.py                  # Root执行器  
-│   │   └── methods/                     # 不同Root方法  
-│   │       └── __init__.py  
-│   │   
-│   └── 📁 utils/                        # 工具函数  
-│       ├── __init__.py                  
-│       └── Logging.py                   # 日志模块
+XTCRootTools/                          
+├── 📄 __init__.py                       # 包初始化文件  
+├── 📄 core.py                           # 核心类（RootManager, DeviceManager等）  
+├── 📄 exceptions.py                     # 自定义异常  
+│      
+├── 📁 device/                           # 设备相关模块  
+│   ├── 📄 __init__.py  
+│   └── 📄 manager.py                    # 设备管理器  
+│      
+├── 📁 root/                             # Root流程模块  
+│   ├── 📄 __init__.py  
+│   ├── 📄 executor.py                   # Root执行器  
+│   └── 📁 methods/                      # 不同Root方法  
+│       └── 📄 __init__.py  
+│      
+├── 📁 utils/                            # 工具函数  
+│    ├── 📄 __init__.py                  
+│    └── 📄 Logging.py                   # 日志模块
 │   
 ├── 📁 resources/                        # 资源文件（与代码分离）  
 │   │ 
@@ -71,7 +71,8 @@ XTCRootTools/
 │   ├── 📁 tools/                        # 必要工具  
 │   │   
 │   └── 📁 config/                       # 配置文件  
-│       └── config.json  
+│       ├── 📄 SDK_config.json
+│       └── 📄 ADB_config.json
 │   
 ├── 📁 scripts/                          # 辅助脚本 
 │   
@@ -91,6 +92,21 @@ XTCRootTools/
 ├── 📄 LICENSE                           # 开源协议
 └── 📄 .gitignore                        # Git忽略规则  
 ```
+
+---
+
+## 第三方代码引用
+
+本项目引用了以下开源项目的代码：
+
+### [edl](https://github.com/bkerler/edl)
+* **作者**: Bjoern Kerler
+* **许可证**: MIT License
+* **用途**: Qualcomm EDL 模式通信相关功能
+* **版权声明**: Copyright (c) 2018 Bjoern Kerler
+
+具体引用的模块包括：
+* 暂无
 
 ---
 

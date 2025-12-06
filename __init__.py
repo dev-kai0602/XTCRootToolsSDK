@@ -4,8 +4,8 @@
 
 """
 
-from . import utils
-from . import exceptions
+import utils
+import exceptions
 
 __all__ = ['utils', 'exceptions']
 __authors__ = ['kai']

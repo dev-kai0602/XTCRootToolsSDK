@@ -4,7 +4,8 @@ import pathlib
 
 import pytest
 
-from XTCRoot import utils
+import utils
+
 
 def test_logging() -> None:
     """ 测试函数1 """

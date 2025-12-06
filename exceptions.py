@@ -8,7 +8,7 @@ class DevicesError:
     """ ADB设备错误类 """
 
     class DeviceNotFoundError(Exception):
-        """ 设备未找到/未有设备连接
+        """ 未找到设备
 
             Args:
                 host (str) = '': 地址
@@ -27,3 +27,14 @@ class DevicesError:
                 message_list.append(message)
 
             super().__init__(" ".join(message_list))
+
+    class DeviceNotConnect(Exception):
+        """ 设备断开连接
+
+            Args:
+                *args: 报错信息
+
+        """
+
+        def __init__(self, *args):
+            super().__init__(args)
