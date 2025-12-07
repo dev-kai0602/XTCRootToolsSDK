@@ -12,6 +12,7 @@ wheels/
 # 忽略文件夹
 .idea
 tests
+resources/drivers
 
 # 忽略文件
 *.log
