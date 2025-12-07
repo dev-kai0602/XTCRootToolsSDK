@@ -28,6 +28,7 @@ class DevicesError:
 
             super().__init__(" ".join(message_list))
 
+
     class DeviceNotConnect(Exception):
         """ 设备断开连接
 
